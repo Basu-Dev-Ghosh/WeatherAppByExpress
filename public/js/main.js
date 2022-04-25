@@ -20,7 +20,7 @@ const checkWeather = async(event)=>
     else{
     try
 {
-    const url=`http://api.weatherapi.com/v1/current.json?key=da706f928c504a83aa7230110222404&q=${value}`;
+    const url=`https://api.weatherapi.com/v1/current.json?key=da706f928c504a83aa7230110222404&q=${value}`;
     const response=await fetch(url);
     const data= await response.json();
     temph1.classList.remove("hide");
