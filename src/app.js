@@ -1,7 +1,7 @@
 const express =require('express');
 const path =require('path');
 const hbs=require('hbs');
-
+const port=process.env.PORT || 8000;
 
 const app = express();
 //public static path
@@ -38,6 +38,6 @@ app.get('*',(req,res)=>{
 });
 
 
-app.listen(8000,(error)=>{
+app.listen(port,(error)=>{
  console.log("server starts");
 });
